@@ -36,7 +36,7 @@ resource "aws_instance" "platzi-instance" {
       password = "gianKOKI10"
       private_key = file("~/.ssh/packer-key_name")
       host = self.public_ip
-    },
+    }
     inline = [
       "echo hello",
       "sudo systemctl start docker",

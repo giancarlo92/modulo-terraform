@@ -34,7 +34,7 @@ resource "aws_instance" "platzi-instance" {
       type = "ssh"
       user = "ec2-user"
       password = "gianKOKI10"
-      private_key = file("~/.ssh/packer-key_name")
+      private_key = file("~/.ssh/packer-key")
       host = self.public_ip
     }
     inline = [
